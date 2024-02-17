@@ -1891,7 +1891,7 @@ version: "3.7"
 
 services:
   chatwoot_app:
-    image: amoxt/chatwoot-arm:v3.4.0
+    image: chatwoot/chatwoot:v3.5.2
     command: bundle exec rails s -p 3000 -b 0.0.0.0
     entrypoint: docker/entrypoints/rails.sh
     volumes:
@@ -1952,7 +1952,7 @@ services:
         - traefik.http.routers.chatwoot_app.middlewares=sslheader@docker
 
   chatwoot_sidekiq:
-    image: amoxt/chatwoot-arm:v3.4.0
+    image: chatwoot/chatwoot:v3.5.2
     command: bundle exec sidekiq -C config/sidekiq.yml
     volumes:
       - chatwoot_data:/app/storage
