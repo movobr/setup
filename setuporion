@@ -2683,7 +2683,7 @@ cat > evolution.yaml <<EOL
 version: "3.7"
 services:
   evolution_oriondesign:
-    image: atendai/evolution-api:Homolog
+    image: atendai/evolution-api:homolog
     command: ["node", "./dist/src/main.js"]
     volumes:
     - evolution_oriondesign_instances:/evolution/instances
