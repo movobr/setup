@@ -7599,7 +7599,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   n8n${1:+_$1}_webhook:
-    image: n8nio/n8n:latest ## Versão do N8N
+    image: n8nio/n8n:v1.77.0 ## Versão do N8N
     command: webhook
 
     networks:
