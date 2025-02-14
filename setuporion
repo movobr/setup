@@ -3512,7 +3512,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   postgres:
-    image: postgres:14 ## Versão do postgres
+    image: astraonline/postgrespgvector:2024 ## Versão do postgres
 
     volumes:
       - postgres_data:/var/lib/postgresql/data
