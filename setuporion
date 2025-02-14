@@ -3512,7 +3512,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   postgres:
-    image: pgvector/pgvector:pg14 ## Versão do postgres
+    image: pgvector/pgvector:pg16 ## Versão do postgres
 
     volumes:
       - postgres_data:/var/lib/postgresql/data
@@ -4857,7 +4857,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   chatwoot${1:+_$1}_sidekiq:
-    image: chatwoot/chatwoot:latest ## Versão do Chatwoot
+    image: amoxt/chatwoot-arm ## Versão do Chatwoot
     command: bundle exec sidekiq -C config/sidekiq.yml
 
     volumes:
