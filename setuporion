@@ -3771,7 +3771,7 @@ services:
 ## --------------------------- ORION --------------------------- ##
 
   pgvector:
-    image: pgvector/pgvector:pg16 ## Versão do PgVector
+    image: pgvector/pgvector:pg14 ## Versão do PgVector
 
     volumes:
       - pgvector:/var/lib/postgresql/data
